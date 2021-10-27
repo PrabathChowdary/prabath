@@ -1,0 +1,290 @@
+<head>
+	<style>
+	.menu{
+		background-color:#000000;
+		display: flex;
+		font-family: sans-serif;
+		top: 0;
+		left: 0;
+		right: 0;
+	}
+	.menu1{
+		background-color:#ffffff;
+		display: flex;
+		font-family: sans-serif;
+	}
+	.tab{
+	  align-items: center;
+	  justify-content: center;
+	  margin: 20px;
+	  padding: 16px;
+	  border-top-radius: 8px;
+	  border-top-right-radius:5px;
+  	  border-top-left-radius:5px;
+  	  border-bottom-right-radius:5px;
+  	  border-bottom-left-radius:5px;
+	}
+		.links{
+			background-color:#000000;
+			display: flex;
+			font-family: sans-serif;
+			top: 0;
+			left: 0;
+			right: 0;
+			margin: 0 510.5px;
+		}
+		.toolbar{
+			justify-content:flex-start;
+			background-color:#000000;
+			display: flex;
+			font-family: sans-serif;
+			top: 0;
+			left: 0;
+			right: 0;
+		}
+		a:link, a:visited{
+			background-color:Black;
+			color: rgb(255,215,64);
+			font-size: 100%;
+			padding: 14.6px 25px;
+			text-align: center;
+			display: inline-block;
+			text-decoration: none;
+			border: 3px solid black;
+			border-top:3px solid rgb(255,215,64);
+			transition: all 2s ease-in-out;
+		}
+		a:hover, a:active{
+			background-color: rgb(0,0,0);
+			color: rgb(255,79,0);
+			display: flex;
+			border-top: 3px solid black;
+			border-bottom: 3px solid rgb(255,79,0);
+			text-decoration: none;
+			border-radius:0px;
+			transition: all 1s ease-in-out;
+		}
+		.myheader{
+			border-top: 3px solid white;
+			border-bottom: 3px solid black;
+			border-right: 500px solid white;
+			border-left: 500px solid white;
+			background-color:white;
+			font-size: 25px;
+			border-radius:0px;
+			text-align: center;
+			transition: all 5s ease-in-out;
+		}
+	body{
+		border-radius:5px;
+		background-color: rgb(255,255,255);
+		font-size: 130%;
+		font-family: sans-serif;
+		text-align: center;
+		margin-top: 10px;
+		left: 0;
+		right: 0;
+		transition: all 5s ease-in-out;
+	}
+	ngb-carousel {
+		max-height: 350px;
+	    max-width: 1300px;
+	    background:linear-gradient(130deg,rgb(255,215,64),orange,orange,orange,orange,rgb(255,215,64));
+		margin-left: 10px;
+		margin-right: 10px;
+		margin-bottom: 10px;
+		height:100% !important;
+		border-radius:10px;
+	}
+	
+	ngb-carousel img {
+    	margin-top:12px;
+    	margin-left:50px;
+    	margin-right:50px;
+    	margin-bottom:10px;
+    	align:center;
+    	height:100% !important;
+    	width:100%;
+	}
+	
+	ngb-carousel {
+	    width: inherit;
+	    height: inherit;
+	}
+	
+	.carousel-inner {
+	    overflow: visible;
+	}
+	.carousel-indicators li {
+  		
+    	background-color: red !important;
+ 		
+ 		}
+	.carousel-item {
+	    display: flex !important;
+	    opacity: 0;
+	    visibility: hidden;
+	    transition: opacity 1s ease-in-out, visibility 1s;
+	    z-index: -1;
+	    color:black;
+	}
+	
+	.carousel-item.active{
+	    opacity: 1;
+	    visibility: visible;
+	    z-index: 10;
+	}
+	
+	.carousel-control-prev {
+	     z-index: 20;
+	     background-color:black;
+	}
+	
+	
+	.carousel-control-next {
+	     z-index: 20;
+	     background-color:black;
+	}
+	
+	.carousel-indicators{
+	    z-index: 20;
+	    background-color:black;
+	}
+	</style>
+</head>
+<div class="menu">
+	<div class="toolbar">
+	<img
+	   height="55"
+	   width="181"
+	   alt="A logo"
+	   align="right"
+	   src="assets/Web_logo.png"
+	/>
+	</div>
+	<div class="links">
+		<a href="https://www.linkedin.com"><b>Linkedin</b></a>
+		<a href="https://www.youtube.com"><b>Youtube</b></a>
+		<a href="https://www.facebook.com"><b>Facebook</b></a>
+		<a href="https://www.instagram.com"><b>Instagram</b></a>
+		<a href="https://www.twitter.com"><b>Twitter</b></a>
+	</div>
+</div>
+
+<body>
+<div class="menu1">
+<div>
+<ngb-carousel>
+	  <ng-template ngbSlide>
+	    <div>
+	     <img style="height:80%;width:80%" src="assets/E-con_web.jpg" alt="Carousel">
+	    </div>
+	  </ng-template><ng-template ngbSlide>
+	    <div>
+	      <img style="height:80%;width:80%" src="assets/OTT.jpg" alt="Carousel">
+	    </div>
+	  </ng-template><ng-template ngbSlide>
+	    <div>
+	      <img style="height:80%;width:80%" src="assets/OTT1.jpg" alt="Carousel">
+	    </div>
+	  </ng-template>
+	  <ng-template ngbSlide>
+	    <div>
+	      <img style="height:55%;width:55%" src="assets/Wallpaper.jpg" alt="Carousel">
+	    </div>
+	  </ng-template>
+</ngb-carousel>
+</div>
+<div>
+	<mat-card style="margin-right:10px;max-width:500px;max-height:350px;height:100% !important;background:linear-gradient(130deg,rgb(255,215,64),orange,rgb(255,215,64));border-radius:10px">
+		<img style="height:45%; width:30%;" src="assets/Dp.jpg">
+		<p style="margin-top:5px;color:black;"><small>Myself</small><b> Prabath Sai Sumanth Tumati </b><small>and this is my portfolio. Here, I'm to showcase my skills and creative talent. Hope, you like the website and you'll be reviewing it by messaging me on my social media.</small></p>
+		<small><b>Thank you</b></small>
+	</mat-card>
+</div>
+</div>
+<p class="myheader"><b>Education</b></p>
+<mat-tab-group dynamicheight mat-align-tabs="center" backgroundColor="accent" color="accent">
+<mat-tab label="10th">
+<div class="tab mat-elevation-z4">
+<h2><b>Vikas The Concept School</b></h2>
+<p><b><small style="color:grey"><b>CGPA:</b></small> 10.0</b></p>
+<p></p>
+My memories here, are the one's that come to mind frequently.
+<p></p>
+<i>"Trying to please people will not help in gaining friends, instead wastes your time".</i> 
+</div>
+</mat-tab>
+<mat-tab label="12th">
+<div class="tab mat-elevation-z4">
+<h2><b>Impulse Junior College</b></h2>
+<p><b><small style="color:grey"><b>Percentage:</b></small> 93.1%</b></p>
+<p></p>
+Though it was a short period of 2 years, it was a place where I had the best staff, the best friends and the best exposure.
+<p></p>
+<i>"Time is precious, make every second of your life count"</i>
+</div>
+</mat-tab>
+<mat-tab label="B.E ECE">
+<div class="tab mat-elevation-z4">
+<h2><b>SRM Easwari Engineering College</b></h2>
+<b><small style="color:grey"><b>CGPA:</b></small> 9.1</b>
+<p></p>
+It's a game of life. Building relations decide, how well your life is going to carved.
+<p></p>
+<i>"Happy life does cost something and it's hardwork and smartwork"</i>
+</div>
+</mat-tab>
+</mat-tab-group>
+<p class="myheader"><b>Technical Skills</b></p>
+<mat-tab-group dynamicheight mat-align-tabs="center" backgroundColor="accent" color="accent">
+<mat-tab label="HTML, CSS, Angular">
+<div class="tab mat-elevation-z4">
+<mat-progress-bar mode="determinate" value="70"></mat-progress-bar>
+<p></p>
+<img style="height:32%;width:32%;border-radius:5px;margin-right:10px " src="./assets/OTT.jpg">
+<img style="height:32%;width:32%;border-radius:5px;margin-right:10px" src="./assets/OTT1.jpg"> 
+<img style="height:32%;width:32%;border-radius:5px; " src="./assets/E-con_web.jpg">
+</div>
+</mat-tab>
+<mat-tab label="MySQL">
+<div class="tab mat-elevation-z4">
+<p></p>
+<img style="height:57.65%;width:57.65%;border-radius:5px;margin-right:10px " src="./assets/Database.jpg">
+</div>
+</mat-tab>
+<mat-tab label="B.E ECE">
+<div class="tab mat-elevation-z4">
+<h2><b>SRM Easwari Engineering College</b></h2>
+<b><small style="color:grey"><b>CGPA:</b></small> 9.1</b>
+<p></p>
+Had a wonderful experience at this place. A place which I would never missed.
+</div>
+</mat-tab>
+</mat-tab-group>
+<p class="myheader"><b>Other Skills</b></p>
+<mat-tab-group dynamicheight mat-align-tabs="center" backgroundColor="accent" color="accent">
+<mat-tab label="Photography">
+<div class="tab mat-elevation-z4">
+<img style="height:28%;width:28%;border-radius:5px;margin-right:10px " src="./assets/Wallpaper.jpg">
+<img style="height:39.5%;width:39.5%;border-radius:5px;margin-right:10px" src="./assets/PSX_20200901_111236.jpg"> 
+<img style="height:28%;width:28%;border-radius:5px" src="./assets/IMG_20210808_231605.jpg">
+</div>
+</mat-tab>
+<mat-tab label="Logo Designing">
+<div class="tab mat-elevation-z4">
+<img style="height:30%;width:30%;border-radius:5px;margin-right:20px " src="./assets/Netman.png">
+<img style="height:43%;width:43%;border-radius:5px;margin-right:20px" src="./assets/Web_logo.png"> 
+<img style="height:10.5%;width:10.5%;border-radius:5px" src="./assets/A.png">
+</div>
+</mat-tab>
+<mat-tab label="B.E ECE">
+<div class="tab mat-elevation-z4">
+<h2><b>SRM Easwari Engineering College</b></h2>
+<b><small style="color:grey"><b>CGPA:</b></small> 9.1</b>
+<p></p>
+Had a wonderful experience at this place. A place which I would never missed.
+</div>
+</mat-tab>
+</mat-tab-group>
+</body>
